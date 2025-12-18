@@ -7,6 +7,7 @@ import Products from "./components/Products.jsx";
 import ProductDetail from "./components/ProductDetail.jsx";
 import Partners from "./components/Partners.jsx";
 import Footer from "./components/Footer.jsx";
+import About from "./components/About.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -28,9 +29,11 @@ createRoot(document.getElementById("root")).render(
                             <Hero />
                             <Products />
                             <Partners />
+                            <About />
                         </>
                     }
                 />
+                <Route path="/about" element={<About />} />
                 <Route path="/products/:id" element={<ProductDetail />} />
             </Routes>
             <Footer />
