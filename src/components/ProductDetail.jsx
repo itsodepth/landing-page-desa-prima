@@ -33,7 +33,7 @@ const ProductDetail = () => {
     return (
         <div className="container mx-auto px-6 md:px-12 py-12">
             <div className="mb-6">
-                <Link to="/" className="text-sm text-green-700 hover:underline">
+                <Link to="/" className="text-sm text-[#1C4D8D] hover:underline">
                     ← Kembali ke beranda
                 </Link>
             </div>
@@ -59,12 +59,12 @@ const ProductDetail = () => {
 
                 <div>
                     <h1 className="text-3xl md:text-3xl font-bold mb-2">{product.name}</h1>
-                    <p className="text-2xl font-semibold text-green-700 mb-4">{product.price}</p>
+                    <p className="text-2xl font-semibold text-[#1C4D8D] mb-4">{product.price}</p>
                     {product.location && <p className="text-sm text-gray-500 mb-4">📍 {product.location}</p>}
                     <p className="text-sm text-gray-700 leading-relaxed mb-4 text-justify">{product.description}</p>
 
                     {waLink && (
-                        <a href={waLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 rounded-full bg-green-700 text-white text-sm font-semibold shadow-md hover:bg-green-800 transition">
+                        <a href={waLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 rounded-full bg-[#1C4D8D] text-white text-sm font-semibold shadow-md hover:bg-[#4988C4] transition">
                             Hubungi via WhatsApp
                         </a>
                     )}

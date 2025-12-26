@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import logoImage from "../assets/logos.png";
 
 const Footer = () => {
     const menuItems = ["Home", "Produk", "Kemitraan", "Tentang Kami"];
@@ -11,12 +12,21 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#5D866C] text-white pt-12 pb-6 mt-12">
+        <footer className="bg-[#1C4D8D] text-white pt-12 pb-6 mt-12">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8">
                     {/* Kolom 1 - Logo & Deskripsi */}
                     <div className="lg:col-span-1">
-                        <div className="font-bold text-xl bg-white text-[#5D866C] px-3 py-1 rounded w-max mb-4">Logo UMKM</div>
+                        <div className="flex items-center gap-2 mb-4">
+                            <img 
+                                src={logoImage} 
+                                alt="Logo UMKM" 
+                                className="h-10 md:h-12 object-contain"
+                            />
+                            <span className="font-bold text-lg md:text-xl text-[#F5F5F5]">
+                                Desa Prima
+                            </span>
+                        </div>
                         <p className="text-sm text-gray-200 leading-relaxed mb-4">Platform yang menghubungkan produk UMKM Desa dengan pasar digital untuk mendukung ekonomi lokal.</p>
                     </div>
 
@@ -25,7 +35,7 @@ const Footer = () => {
                         <h4 className="font-bold text-lg mb-4 text-white">Kontak & Alamat</h4>
                         <ul className="text-sm text-gray-200 space-y-3">
                             <li className="flex items-start gap-3">
-                                <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 text-green-300 shrink-0" />
+                                <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 text-[#4988C4] shrink-0" />
                                 <span>
                                     Dusun Kenteng, Desa Ponjong,
                                     <br />
@@ -35,11 +45,11 @@ const Footer = () => {
                                 </span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faEnvelope} className="text-green-300 shrink-0" />
+                                <FontAwesomeIcon icon={faEnvelope} className="text-[#4988C4] shrink-0" />
                                 <span>info@desaprima.umkm.id</span>
                             </li>
                             <li className="flex items-center gap-3">
-                                <FontAwesomeIcon icon={faPhone} className="text-green-300 shrink-0" />
+                                <FontAwesomeIcon icon={faPhone} className="text-[#4988C4] shrink-0" />
                                 <span>+62 812-3456-7890</span>
                             </li>
                         </ul>
