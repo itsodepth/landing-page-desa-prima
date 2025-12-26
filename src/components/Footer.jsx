@@ -23,7 +23,7 @@ const Footer = () => {
                                 alt="Logo UMKM" 
                                 className="h-10 md:h-12 object-contain"
                             />
-                            <span className="font-bold text-lg md:text-xl text-[#F5F5F5]">
+                            <span className="font-bold text-lg   md:text-xl text-[#F5F5F5]">
                                 Desa Prima
                             </span>
                         </div>
