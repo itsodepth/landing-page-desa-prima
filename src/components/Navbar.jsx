@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
-// import About from "./About.jsx"; // HAPUS INI: Navbar tidak perlu import file halamannya, cukup di App.jsx
+import logoImage from "../assets/logos.png"; 
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,14 +52,21 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`sticky top-0 z-50 bg-[#5D866C] text-[#F5F5F5] py-4 px-6 md:px-12 transition-transform duration-300 ${hiddenOnScroll ? "-translate-y-full" : "translate-y-0"}`}>
+        <nav className={`sticky top-0 z-50 bg-[#1C4D8D] text-[#F5F5F5] py-2 px-6 md:px-12 transition-transform duration-300 ${hiddenOnScroll ? "-translate-y-full" : "translate-y-0"}`}>
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo Kiri */}
                 <div
-                    className="font-bold text-xl bg-[#F5F5F5] text-[#5D866C] px-3 py-1 rounded cursor-pointer"
-                    onClick={() => navigate("/")} // Opsional: Logo bisa diklik balik ke home
+                    className="cursor-pointer transition-opacity flex items-center gap-2"
+                    onClick={() => navigate("/")}
                 >
-                    Logo UMKM
+                    <img 
+                        src={logoImage} 
+                        alt="Logo UMKM" 
+                        className="h-10 md:h-12 object-contain"
+                    />
+                    <span className="font-bold text-lg md:text-xl text-[#F5F5F5]">
+                        Desa Prima
+                    </span>
                 </div>
 
                 {/* --- MENU TENGAH (DESKTOP) --- */}

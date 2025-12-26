@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import banner1 from "../assets/img-1.jpg";
-import banner2 from "../assets/img-2.jpg";
-import banner3 from "../assets/img-3.jpg";
+import banner1 from "../assets/produk/kripso.webp";
+import banner2 from "../assets/produk/utijana.webp";
+import banner3 from "../assets/produk/keripik-pisang-makmur.webp";
+import peyekKacang from "../assets/produk/peyek-kacang-makmur.webp";
+import boluKueJadul from "../assets/produk/bolu-kue-jadul.webp";
+import kueBawang from "../assets/produk/kue-bawang-anindya.webp";
 
 const banners = [banner1, banner2, banner3];
 
@@ -58,29 +61,29 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {/* Item 1 - Besar */}
                 <div className="md:col-span-2 h-64 md:h-80 bg-gray-200 rounded-2xl relative overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://placehold.co/600x400/png?text=Sate+Singkong" alt="Sate" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <img src={peyekKacang} alt="Peyek Kacang Makmur" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                     <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white">
-                        <h3 className="font-bold text-lg md:text-xl mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Sate Singkong Bu Marni</h3>
-                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Produk UMKM unggulan</p>
+                        <h3 className="font-bold text-lg md:text-xl mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Peyek Kacang Makmur</h3>
+                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Peyek kacang rasa gurih asli Geblug</p>
                     </div>
                 </div>
                 {/* Item 2 */}
                 <div className="h-64 md:h-80 bg-gray-200 rounded-2xl relative overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://placehold.co/400x400/png?text=Kerajinan" alt="Kerajinan" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <img src={boluKueJadul} alt="Bolu Kue Jadul" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                     <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white">
-                        <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Kerajinan Batok</h3>
-                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Handmade dengan cinta</p>
+                        <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Bolu Kue Jadul</h3>
+                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Bolu kue berbahan kelapa</p>
                     </div>
                 </div>
                 {/* Item 3 */}
                 <div className="h-64 md:h-80 bg-gray-200 rounded-2xl relative overflow-hidden group cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
-                    <img src="https://placehold.co/400x400/png?text=Minyak" alt="Minyak" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <img src={kueBawang} alt="Kue Bawang Anindya" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                     <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white">
-                        <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Minyak Urut</h3>
-                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Herbal alami tradisional</p>
+                        <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">Kue Bawang Anindya</h3>
+                        <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">Kue bawang asli Desa Kenteng</p>
                     </div>
                 </div>
             </div>
