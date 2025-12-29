@@ -30,7 +30,8 @@ const Navbar = () => {
   };
 
   const scrollToProducts = makeScrollToSection("products-section");
-  const scrollToPartners = makeScrollToSection("partners-section");
+  const scrollToAbout = makeScrollToSection("about-section");
+  const scrollToLocation = makeScrollToSection("location-section");
 
   // Sembunyikan navbar saat scroll ke bawah
   useEffect(() => {
@@ -88,13 +89,16 @@ const Navbar = () => {
           </li>
           <li
             className="hover:text-gray-200 cursor-pointer"
-            onClick={scrollToPartners}
+            onClick={scrollToAbout}
           >
-            Kemitraan
+            Tentang Kami
           </li>
-          {/* MODIFIKASI 1: Link Desktop */}
-          <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/about">Tentang Kami</Link>
+          {/* Lokasi Desktop */}
+          <li
+            className="hover:text-gray-200 cursor-pointer"
+            onClick={scrollToLocation}
+          >
+            Lokasi
           </li>
         </ul>
 
@@ -156,17 +160,17 @@ const Navbar = () => {
             </li>
             <li
               className="hover:text-gray-200 cursor-pointer"
-              onClick={scrollToPartners}
+              onClick={scrollToAbout}
             >
-              Kemitraan
+              Tentang Kami
             </li>
 
-            {/* MODIFIKASI 2: Link Mobile */}
-            <li className="hover:text-gray-200 cursor-pointer">
-              {/* Tambahkan onClick setIsOpen(false) agar menu nutup setelah diklik */}
-              <Link to="/about" onClick={() => setIsOpen(false)}>
-                Tentang Kami
-              </Link>
+            {/* Lokasi Mobile */}
+            <li
+              className="hover:text-gray-200 cursor-pointer"
+              onClick={scrollToLocation}
+            >
+              Lokasi
             </li>
           </ul>
           <div className="flex space-x-4 items-center mt-3">

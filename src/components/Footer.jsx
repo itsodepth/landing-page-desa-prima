@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -9,7 +10,31 @@ import {
 import logoImage from "../assets/logos.png";
 
 const Footer = () => {
-  const menuItems = ["Home", "Produk", "Kemitraan", "Tentang Kami"];
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const makeScrollToSection = (id) => () => {
+    const doScroll = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    if (location.pathname === "/") {
+      doScroll();
+    } else {
+      navigate("/");
+      setTimeout(doScroll, 300);
+    }
+  };
+
+  const menuItems = [
+    { label: "Home", action: () => navigate("/") },
+    { label: "Produk", action: makeScrollToSection("products-section") },
+    { label: "Lokasi", action: makeScrollToSection("location-section") },
+    { label: "Tentang Kami", action: makeScrollToSection("about-section") },
+  ];
   const socialLinks = [
     { icon: faInstagram, name: "Instagram", url: "#" },
     { icon: faTiktok, name: "TikTok", url: "#" },
@@ -80,9 +105,10 @@ const Footer = () => {
               {menuItems.map((item, idx) => (
                 <li
                   key={idx}
-                  className="hover:text-white cursor-pointer transition-colors duration-200 "
+                  className="hover:text-white cursor-pointer transition-colors duration-200"
+                  onClick={item.action}
                 >
-                  {item}
+                  {item.label}
                 </li>
               ))}
             </ul>

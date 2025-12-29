@@ -33,8 +33,10 @@ const About = () => {
         keluarga, didukung pemerintah daerah.
       </p>
 
-      <div className="w-full max-w-3xl mx-auto">
-        <h3 className="text-xl font-semibold text-center mb-4">Lokasi Kami</h3>
+      <div id="location-section" className="w-full max-w-3xl mx-auto">
+        <h3 className="text-xl font-semibold text-center mb-4 location">
+          Lokasi Kami
+        </h3>
         <div className="w-full rounded-lg overflow-hidden shadow">
           <div className="w-full aspect-video">
             <iframe

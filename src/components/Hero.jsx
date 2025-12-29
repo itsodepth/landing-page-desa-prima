@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import banner1 from "../assets/desa-prima/desa-prima.png";
-import banner2 from "../assets/produk/utijana.webp";
-import banner3 from "../assets/produk/keripik-pisang-makmur.webp";
+import banner2 from "../assets/produk/kumpulan-produk.png";
+import banner3 from "../assets/desa-prima/bangunan-desa-prima.png";
 import peyekKacang from "../assets/produk/peyek-kacang-makmur.webp";
 import boluKueJadul from "../assets/produk/bolu-kue-jadul.webp";
 import kueBawang from "../assets/produk/kue-bawang-anindya.webp";
