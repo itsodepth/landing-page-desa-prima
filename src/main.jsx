@@ -12,31 +12,34 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 // Register icons
 library.add(fab, faTiktok, faInstagram, faMapMarkerAlt, faEnvelope, faPhone);
 
 createRoot(document.getElementById("root")).render(
-    <StrictMode>
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route
-                    path="/"
-                    element={
-                        <>
-                            <Hero />
-                            <Products />
-                            <Partners />
-                            <About />
-                        </>
-                    }
-                />
-                <Route path="/about" element={<About />} />
-                <Route path="/products/:id" element={<ProductDetail />} />
-            </Routes>
-            <Footer />
-        </BrowserRouter>
-    </StrictMode>
+  <StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Products />
+              <About />
+            </>
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  </StrictMode>
 );
