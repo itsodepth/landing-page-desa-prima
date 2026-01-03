@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import logoImage from "../assets/logos.png";
 
 const Navbar = () => {
@@ -106,12 +106,15 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           {/* Icon Sosmed - Desktop */}
           <div className="hidden md:flex space-x-6 items-center">
-            <span className="cursor-pointer hover:opacity-80">
-              <FontAwesomeIcon icon={faTiktok} size="lg" />
-            </span>
-            <span className="cursor-pointer hover:opacity-80">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="cursor-pointer hover:opacity-80"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </span>
+            </a>
           </div>
 
           {/* Tombol Hamburger - Mobile */}
@@ -174,12 +177,15 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex space-x-4 items-center mt-3">
-            <span className="cursor-pointer hover:opacity-80">
-              <FontAwesomeIcon icon={faTiktok} size="lg" />
-            </span>
-            <span className="cursor-pointer hover:opacity-80">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="cursor-pointer hover:opacity-80"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </span>
+            </a>
           </div>
         </div>
       )}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
   faMapMarkerAlt,
   faEnvelope,
@@ -35,10 +35,7 @@ const Footer = () => {
     { label: "Lokasi", action: makeScrollToSection("location-section") },
     { label: "Tentang Kami", action: makeScrollToSection("about-section") },
   ];
-  const socialLinks = [
-    { icon: faInstagram, name: "Instagram", url: "#" },
-    { icon: faTiktok, name: "TikTok", url: "#" },
-  ];
+  const socialLinks = [{ icon: faInstagram, name: "Instagram", url: "#" }];
 
   return (
     <footer className="bg-[#1C4D8D] text-white pt-12 pb-6 mt-12">
