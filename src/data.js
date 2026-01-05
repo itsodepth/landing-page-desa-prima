@@ -12,6 +12,7 @@ import peyekKacang from "./assets/produk/peyek-kacang-makmur.webp";
 import keripikSingkong from "./assets/produk/keripik-singkong-windhu-utari.webp";
 import peyekKacangUtijana from "./assets/produk/peyek-kacang-makmur.webp";
 import manggleng from "./assets/produk/manggleng.webp";
+import kerupukSingkong from "./assets/produk/kerupuk-singkong.webp";
 
 export const products = [
   {
@@ -28,7 +29,7 @@ export const products = [
   {
     id: 2,
     name: "Krecek Singkong",
-    price: "Rp40.000",
+    price: "Rp40.000 / kg",
     category: "Makanan",
     description:
       "Krecek singkong yang diolah secara tradisional, dijemur hingga kering sempurna sebelum digoreng. Menghasilkan tekstur yang renyah dan mengembang dengan rasa gurih alami singkong. (Produksi: Ibu Tini)",
@@ -61,7 +62,7 @@ export const products = [
   {
     id: 5,
     name: "Kue Bawang Anindya",
-    price: "Rp5.000",
+    price: "Rp15.000",
     category: "Makanan",
     description:
       "Kue bawang atau stik bawang dengan aroma seledri dan bawang yang harum. Teksturnya empuk dan renyah, tidak keras saat digigit. Bumbunya meresap sempurna, cocok untuk isi toples di rumah. (Produksi: Ibu Yuni)",
@@ -72,7 +73,7 @@ export const products = [
   {
     id: 6,
     name: "Patolo",
-    price: "Rp40.000",
+    price: "Rp40.000 / kg",
     category: "Makanan",
     description:
       "Jajanan tradisional yang terbuat dari tepung beras dikukus, sering disajikan dengan parutan kelapa atau santan. Memiliki tekstur kenyal dan rasa yang lembut di lidah, membawa nuansa nostalgia pedesaan. (Produksi: Ibu Sukini)",
@@ -133,6 +134,17 @@ export const products = [
     description:
       "Manggleng adalah olahan singkong kukus yang dikeringkan lalu digoreng, memiliki tekstur lebih 'berisi' daripada keripik biasa. Dibalut dengan bumbu pedas manis yang lengket dan menggugah selera. (Produksi: Ibu Sukini)",
     images: [manggleng],
+    location: "Bentar",
+    whatsapp: "6285786474699",
+  },
+  {
+    id: 12,
+    name: "Kerupuk Singkong",
+    price: "Rp40.000 / kg",
+    category: "Makanan",
+    description:
+      "Kerupuk singkong adalah jenis kerupuk tradisional Indonesia yang terbuat dari singkong (ubi kayu/tapioka) sebagai bahan utama. Kerupuk ini diolah dengan cara singkong diparut atau diambil patinya, lalu dibumbui, dikukus, dijemur hingga kering, dan digoreng hingga mengembang. Rasanya gurih, teksturnya renyah, dan sering dijadikan pelengkap makanan atau camilan. (Produksi: Ibu Sukini)",
+    images: [kerupukSingkong],
     location: "Bentar",
     whatsapp: "6285786474699",
   },

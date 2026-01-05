@@ -35,7 +35,13 @@ const Footer = () => {
     { label: "Lokasi", action: makeScrollToSection("location-section") },
     { label: "Tentang Kami", action: makeScrollToSection("about-section") },
   ];
-  const socialLinks = [{ icon: faInstagram, name: "Instagram", url: "#" }];
+  const socialLinks = [
+    {
+      icon: faInstagram,
+      name: "Instagram",
+      url: "https://www.instagram.com/desaprima_primabogalestari/",
+    },
+  ];
 
   return (
     <footer className="bg-[#1C4D8D] text-white pt-12 pb-6 mt-12">

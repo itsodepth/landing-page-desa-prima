@@ -107,7 +107,7 @@ const Navbar = () => {
           {/* Icon Sosmed - Desktop */}
           <div className="hidden md:flex space-x-6 items-center">
             <a
-              href="#"
+              href="https://www.instagram.com/desaprima_primabogalestari/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

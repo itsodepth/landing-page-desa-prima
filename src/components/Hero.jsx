@@ -144,10 +144,10 @@ const Hero = () => {
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white">
                 <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">
-                  Bolu Kue Jadul
+                  Bolu Kelapa Jadul
                 </h3>
                 <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
-                  Bolu kue berbahan kelapa
+                  Bolu berbahan kelapa
                 </p>
               </div>
             </div>
@@ -162,10 +162,10 @@ const Hero = () => {
             <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 text-white">
               <h3 className="font-bold text-base md:text-lg mb-1 group-hover:translate-y-0 translate-y-2 transition-transform duration-300">
-                Bolu Kue Jadul
+                Bolu Kelapa Jadul
               </h3>
               <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75">
-                Bolu kue berbahan kelapa
+                Bolu berbahan kelapa
               </p>
             </div>
           </div>
