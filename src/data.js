@@ -13,6 +13,7 @@ import keripikSingkong from "./assets/produk/keripik-singkong-windhu-utari.webp"
 import peyekKacangUtijana from "./assets/produk/peyek-kacang-makmur.webp";
 import manggleng from "./assets/produk/manggleng.webp";
 import kerupukSingkong from "./assets/produk/kerupuk-singkong.webp";
+import kerupukSingkong2 from "./assets/produk/kerupuk-singkong-2.webp";
 
 export const products = [
   {
@@ -144,7 +145,7 @@ export const products = [
     category: "Makanan",
     description:
       "Kerupuk singkong adalah jenis kerupuk tradisional Indonesia yang terbuat dari singkong (ubi kayu/tapioka) sebagai bahan utama. Kerupuk ini diolah dengan cara singkong diparut atau diambil patinya, lalu dibumbui, dikukus, dijemur hingga kering, dan digoreng hingga mengembang. Rasanya gurih, teksturnya renyah, dan sering dijadikan pelengkap makanan atau camilan. (Produksi: Ibu Sukini)",
-    images: [kerupukSingkong],
+    images: [kerupukSingkong, kerupukSingkong2],
     location: "Bentar",
     whatsapp: "6285786474699",
   },
